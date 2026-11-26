@@ -1,0 +1,30 @@
+[project]
+name = "comfyui-kdx-llm"
+version = "0.10.5"
+description = "LLM nodes for ComfyUI that talk to any OpenAI-compatible server (llama.cpp, Ollama, vLLM, LM Studio): chat with streaming, vision and audio, sessions, saved system prompts and model profiles, JSON answers split into fields, prompt templates and an on/off switch for prompt enhancement"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.31.0",
+  "numpy>=1.24.0",
+  "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+tokenizer = ["tiktoken>=0.5.0"]
+
+[project.urls]
+Repository = "https://github.com/korodexios/ComfyUI-KDX-LLM"
+
+[tool.comfy]
+PublisherId = "korodexios"
+DisplayName = "KDX LLM"
+Icon = ""
+
+# Local dev tools (uv sync). Not part of the ComfyUI install.
+[dependency-groups]
+dev = [
+  "pytest>=8",
+  "ruff>=0.6",
+]

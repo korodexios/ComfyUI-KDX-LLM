@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.mypy_cache/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# KDX LLM data files (user-generated)
+model_profiles.json
+system_prompts.json
+user_prompts.json
+quick_sampling_presets.json
+sessions.json
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# uv dev environment
+.venv/
+.ruff_cache/
+uv.lock
+system_prompts/
+*.migrated
+
+# Internal notes (never committed)
+dev/
