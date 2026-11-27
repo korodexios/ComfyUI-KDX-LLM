@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-kdx-llm"
-version = "0.10.5"
+version = "0.10.6"
 description = "LLM nodes for ComfyUI that talk to any OpenAI-compatible server (llama.cpp, Ollama, vLLM, LM Studio): chat with streaming, vision and audio, sessions, saved system prompts and model profiles, JSON answers split into fields, prompt templates and an on/off switch for prompt enhancement"
 readme = "README.md"
 license = { file = "LICENSE" }
